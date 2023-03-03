@@ -1,5 +1,5 @@
 # objection-engine-docs
-Documentation about the objection Engine and the Twitter bots ecosystem
+Documentation about the objection Engine and the Ace Attorney bots ecosystem
 
 ## What is objection engine?
 [Objection engine](https://github.com/LuisMayo/objection_engine) is a python library aimed at rendering Ace Attorney-like videos given a list of comments.
