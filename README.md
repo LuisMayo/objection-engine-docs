@@ -5,9 +5,9 @@ Documentation about the objection Engine and the Ace Attorney bots ecosystem
 [Objection engine](https://github.com/LuisMayo/objection_engine) is a python library aimed at rendering Ace Attorney-like videos given a list of comments.
 
 ## What uses does objection engine has?
+The "official" uses, this means the uses I personally give the engine, are mainly bots. More specifically three bots. A Telegram, a Discord and a Twitter bot. This bots were firstly writen in pure Python as normal apps. Then they were changed into a new model based on RabbitMQ queues to allow for better management of multiple bots
 
 ### Classic Bots
-The "official" uses, this means the uses I personally give the engine are mainly bots. More specifically three bots.
 
 - A Twitter Bot: https://github.com/LuisMayo/ace-attorney-twitter-bot
 - A Telegram Bot (now powered off): https://github.com/LuisMayo/ace-attorney-telegram-bot
@@ -28,7 +28,7 @@ This would be the final picture:
 
 ![image](https://user-images.githubusercontent.com/20229636/223217214-08f57d95-43ff-4369-948b-b029e66447ae.png)
 
-This allows me more control over the performance tuning, as I could now dinamically configure the number of workers. It could even let me send the workers to a remote server if I wanted to. To allow horizontal escalation. Something the previous model wouldn't let me. And of course. It freed me from Python :)
+This allows me more control over the performance tuning, as I could now dinamically configure the number of workers. It could even let me send the workers to a remote server if I wanted to. This means I could use horizontal escalation, something the previous model wouldn't let me. And of course, it freed me from Python :)
 
 So. Following this new model, new repositories arised.
 
@@ -36,6 +36,9 @@ So. Following this new model, new repositories arised.
 - An opinionated Typescript library to interact with the worker so the bot maintenance would be more streamlined: https://github.com/LuisMayo/objection-engine-deno-client
 - A new Telegram Client: https://github.com/LuisMayo/obj-engine-telegram-bot
 
-### Other uses
+### Other related repositories
+- A re-implementation of the Discord "classic" bot using Rust + Python (PyO3). This was done since the Discord bot is by far the one consuming more memory. It was though that maybe chaing to a more memory-aware language like Rust the RAM usage would drop but this wasn't the case so the bot got archived: https://github.com/LuisMayo/ace-attorney-discord-bot-rust
+
+### Other unofficial uses
 There are other uses, like an VK bot. But they're not maintained by me.
 
