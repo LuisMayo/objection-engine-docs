@@ -10,10 +10,11 @@ The "official" uses, this means the uses I personally give the engine, are mainl
 ### Classic Bots
 
 - A Twitter Bot: https://github.com/LuisMayo/ace-attorney-twitter-bot
-- A Telegram Bot (now powered off): https://github.com/LuisMayo/ace-attorney-telegram-bot
+- A Telegram Bot: https://github.com/LuisMayo/ace-attorney-telegram-bot
 - A Discord bot: https://github.com/LuisMayo/ace-attorney-discord-bot
 
-### New queue-based bots
+### ~~New queue-based bots~~
+Those bots are no longer of use
 Classic bots their advantages
 - They were easy to (self)host. They're just python3 apps. In fact the hardest point of hosting them was Objection Engine itself, which requires a GNU/Linux installation
 
