@@ -7,13 +7,23 @@ Documentation about the objection Engine and the Ace Attorney bots ecosystem
 ## What uses does objection engine has?
 The "official" uses, this means the uses I personally give the engine, are mainly bots. More specifically three bots. A Telegram, a Discord and a Twitter bot. This bots were firstly writen in pure Python as normal apps. Then they were changed into a new model based on RabbitMQ queues to allow for better management of multiple bots
 
-### Classic Bots
+### v3 Bots
+A new Generation of Bots is coming. The main difference is using a new Rendering Engine written in Godot by Meorge: https://github.com/Meorge/objection-godot
+This new engine is a lot faster, accurate and maintaneable than the old Python-based one.
+
+For this new generation. I also decided to make a new queue system similar to v2, using mysql as a database
+
+DETAILS PENDING
+
+### v1 Bots
+
+Those are bots that manage their own queues and are offered kinda as standalone systems
 
 - A Twitter Bot: https://github.com/LuisMayo/ace-attorney-twitter-bot
 - A Telegram Bot: https://github.com/LuisMayo/ace-attorney-telegram-bot
 - A Discord bot: https://github.com/LuisMayo/ace-attorney-discord-bot
 
-### ~~New queue-based bots~~
+### ~~v2 bots~~
 Those bots are no longer of use
 Classic bots their advantages
 - They were easy to (self)host. They're just python3 apps. In fact the hardest point of hosting them was Objection Engine itself, which requires a GNU/Linux installation
@@ -41,5 +51,5 @@ So. Following this new model, new repositories arised.
 - A re-implementation of the Discord "classic" bot using Rust + Python (PyO3). This was done since the Discord bot is by far the one consuming more memory. It was though that maybe chaing to a more memory-aware language like Rust the RAM usage would drop but this wasn't the case so the bot got archived: https://github.com/LuisMayo/ace-attorney-discord-bot-rust
 
 ### Other unofficial uses
-There are other uses, like an VK bot. But they're not maintained by me.
+There are other uses, like an VK bot. As well as a wonderful DMV bot But they're not maintained by me.
 
