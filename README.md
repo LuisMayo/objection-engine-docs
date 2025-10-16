@@ -2,10 +2,10 @@
 Documentation about the objection Engine and the Ace Attorney bots ecosystem
 
 ## What is objection engine?
-[Objection engine](https://github.com/LuisMayo/objection_engine) is a python library aimed at rendering Ace Attorney-like videos given a list of comments.
+Objection Engine is a project that intends to create funny courtroom videos from conversations
 
 ## What uses does objection engine has?
-The "official" uses, this means the uses I personally give the engine, are mainly bots. More specifically three bots. A Telegram, a Discord and a Twitter bot. This bots were firstly writen in pure Python as normal apps. Then they were changed into a new model based on RabbitMQ queues to allow for better management of multiple bots
+The "official" uses, this means the uses I personally give the engine, are mainly bots. More specifically three bots. A Telegram, a Discord and a Twitter bot.
 
 ### v3 Bots
 A new Generation of Bots is coming. The main difference is using a new Rendering Engine written in Godot by Meorge: https://github.com/Meorge/objection-godot
@@ -16,6 +16,8 @@ For this new generation. I also decided to make a new queue system similar to v2
 DETAILS PENDING
 
 ### v1 Bots
+
+[Objection engine](https://github.com/LuisMayo/objection_engine) is a python library aimed at rendering Ace Attorney-like videos given a list of comments used during the first generation of objection engine
 
 Those are bots that manage their own queues and are offered kinda as standalone systems
 
