@@ -11,7 +11,12 @@ The "official" uses, this means the uses I personally give the engine, are mainl
 A new Generation of Bots is coming. The main difference is using a new Rendering Engine written in Godot by Meorge: https://github.com/Meorge/objection-godot
 This new engine is a lot faster, accurate and maintaneable than the old Python-based one.
 
-For this new generation. I also decided to make a new queue system similar to v2, using mysql as a database
+For this new generation. I also decided to make a new queue system similar to v2, using mysql as a database. The relevant repositories are:
+
+- Rendering engine: Given an script, it renders
+- Queue library: Used both by producers and consumers, a main interop point: https://github.com/LuisMayo/objection-engine-queue-handler
+- Worker: Grabs jobs from the SQL database and makes videos using the rendering engine: https://github.com/LuisMayo/objection-worker-builder
+- Bluesky client: https://github.com/LuisMayo/bluesky-court-bot
 
 DETAILS PENDING
 
